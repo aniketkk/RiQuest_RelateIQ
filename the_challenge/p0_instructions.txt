@@ -1,0 +1,40 @@
+## P0 Instructions, v1.2 ##
+
+We've got a map! Luckily, it shows us all of the islands in the archipelago.
+Less luckily, it doesn't actually indicate which island the disk is hidden on.
+We're not without hope though- all you need to do is find the average size of 
+all the islands and our ops team will handle the rest.
+
+## INPUT ##
+
+The map will be read in from standard input (as if a user was typing it) at 
+runtime. It will have the following format:
+
+2
+10
+01
+
+Where the first line is the dimensions of the archipelago (which happens to
+be perfectly square) and the rest of the lines represent oceans and islands
+(0 and 1 respectively). Islands can touch vertically and horizontally, but not
+diagonally. The previous example consists of two islands, each with area 1. 
+
+## OUTPUT ## 
+
+Your only program output should be to write the average island size (as an int)
+to stdoud (and without any accompanying text. Really. Just the int).
+
+## EXAMPLE ##
+
+## Input:
+6
+110101
+000101
+100111
+011001
+110100
+100010
+
+## Output:
+3
+

@@ -1,0 +1,43 @@
+## P2 Instructions, v1.1 ##
+
+All right, you've found the island, you're getting close. Unfortunately for
+you, the robot that usually does the pathfinding was damaged in his last
+mission and is currently inoperable. A new interface will get him up and
+running though!
+
+As this is your operation, you'll be able to design the Robot class and 
+furnish it with whatever methods you see fit- the only requirement is that 
+there is at least one class in your program, and it is called Robot.
+
+The island is incredibly large and the robot will start in the very center (so
+don't worry about hitting the ocean). The starting location will be 
+considered (0,0) and the initial direction will be N(orth). If the robot moved 
+one space forward, he would be at 0 1 N. If he then rotated once C, he would be 
+at 0 1 NE. The robot will accept a series of instructions and then report its
+coordinates and direction once it has stopped moving (input has ended). 
+
+## INPUT ## 
+The robot will accept a single line of input, a string consisting of a series
+of letters: 
+
+* C: The robot should rotate 45 degrees clockwise
+* A: The robot should rotate 45 degrees anti-clockwise
+* S: The robot should take a step forward in whatever direction it's facing
+
+formatted in an unseparated, uppercase string.
+
+## OUTPUT ##
+Once it has no more input to process, the robot will report its x/y 
+coordinates and the direction it was facing, separated by spaces. Direction is
+formatted as 1 or 2 uppercase letters and is one of the 8 cardinal directions
+(N, NW, W, SW, etc). 
+
+## EXAMPLE ##
+
+## Input:
+SSCSSASCSSSASSCCC
+
+## Output:
+5 10 SE
+
+Since the robot starts in the middle, he can end up in negative coordinates.

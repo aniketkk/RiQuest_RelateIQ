@@ -1,0 +1,49 @@
+## RIQuest instructions, v1.3 ##
+
+Welcome to RIQuest, agent. The situation is a dire one- one of our top 
+operatives collected some vital intel, but they weren't able to relay it back 
+to HQ before they were captured. In the interest of secrecy, this information 
+is stored on an encoded disk hidden somewhere in the Galapagos Islands. 
+
+Pack your bags agent, we're about to get tropical.
+
+## TASKS ##
+The first task is to pinpoint the island where the disk is hidden. Once there, 
+you'll need to develop a way to process the map. We've provided a robot for the
+task, but its circuits are fried. Then, once you have the disk, you'll have to 
+implement the decoding algorithm yourself. 
+
+## RESOURCES ##
+For each of the 3 tasks, there are 3 files:
+    pN_instructions.txt:
+        The briefing for that particular challenge. This will include specific
+        quirks and the details of the mission.
+    pN_test.txt:
+        Even the most prepared agents need a little sanity check once in a
+        while- this is a small test designed to verify your solution meets the
+        minimum challenge requirements. It's suggested that you write more
+        stringent ones before your final submit.
+    pN_puzzle.txt:
+        Your actual task.
+
+Other IMPORTANT specifications:
+    1. You can use most languages. Check riquest.herokuapp.com/langs for
+        exactly which are fair game. C#, Java, and Scala require certain
+        classnames, so double check there that you're doing it right.
+    2. Use the same language for all 3 challenges.
+    3. Code quality matters! Don't gold plate it, but leave us some comments.
+    4. All program input should come from stdin at runtime.
+    5. Print nothing besides the single answer as specified in the spec. The
+        answer should end with a newline character. This includes not writing
+        your own error messages.
+    6. You may assume input is well formatted and present.
+    7. We will test your code with other test cases, so make sure it fits the
+        spec and you test it yourself. Think about corner cases.
+    8. Read all instructions and follow them carefully!
+
+
+You're on your own now. Trust no one, and good luck.
+
+
+
+# This message won't self destruct... unless your computer is already on fire

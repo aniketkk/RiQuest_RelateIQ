@@ -1,0 +1,60 @@
+## P2 Instructions, v1.1 ##
+
+Well done, you've reached the disk! Now all that remains is to deal with that 
+pesky encoding algorithm. In the interest of security, the cipher they chose
+can't be solved without knowing the key used to encode it. The cipher 
+is is a Mono-Alphabetic Cipher, the cooler older brother of the more well known
+Ceaser Cipher. 
+
+Instead of shifting the message by the alphabet in order, a secret key is 
+chosen and the message is instead shifted by following these steps:
+
+Let's say our key is "PALO ALTO".
+1. Append to the key a space, followed by the reverse English alphabet.
+    ("PALO ALTO ZYXWVUTSRQPONMLKJIHGFEDCBA")
+2. Remove duplicate characters (keeping only the first instance of each)
+    ("PALO TZYXWVUSRQNMKJIHGFEDCB")
+3. This is our cipher alphabet for a Ceasar Cipher. So when encoding, A->P, 
+B->A, etc. For this task, you're decoding a message, so that mapping is 
+reversed.
+    ("ABCDEFGHIJKLMNOPQRSTUVWXYZ ")
+    ("PALO TZYXWVUSRQNMKJIHGFEDCB")
+
+All letters in both the key and the alphabet are upper case. There are no 
+numbers or punctuation. Also, be careful with trailing spaces!
+
+## BUILDING THE KEY ## 
+If you've completed both the 1st and 2nd tasks, this is where you'll use those 
+answers. 
+
+## Answer from Task 1: 
+    Repeatedly sum the digits of the number until only a single digit remains.
+    The key begins with that letter of the English alphabet.
+        ex: 78 -> 15 -> 6 -> F
+
+## Answer from Task 2:
+    Cast the absolute value of each of the two numbers to a letter in the 
+    English alphabet. The letter is already a letter (or letters).
+        ex: 4 -8 NE -> 4 8 NE -> D H NE
+
+## Combine them:
+    Therefore, the key in the example would be FDHNE.
+
+You should hardcode the key in your program, but generate the cipher alphabet
+programatically. Again, the ONLY input is the cipher text.
+
+## INPUT ##
+The program will take an uppercase message on a single line. You won't need to 
+edit or sanitize input in any way.
+
+## OUTPUT ##
+The program will the output the same message, decoded. 
+
+## EXAMPLE ##
+(using key 'FDHNE')
+## Input: 
+    XAIFSLALRAIROVAFLAOEUFLEXP
+## Output:
+    I WANT TO WORK AT RELATEIQ
+
+This is it. Dare to be great. 
